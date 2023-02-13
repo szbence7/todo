@@ -1,11 +1,90 @@
+:root {
+  --background-color: #99d4ff;
+  --primary-color: #0093ff;
+  --secondary-color: #66beff;
+  --third-color: #e6f4ff;
+}
+
+body {
+  background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  margin: auto;
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  align-items: center;
+  min-height: 200px;
+}
+
 .todo-list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    width: 80%;
+    font-weight: 500;
   }
   .todo-item {
-    background-color: #f4f4f4;
-    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.318);
     border-bottom: 1px #ccc dotted;
     text-align: left;
+    color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    height: 30px;
+    align-items: center;
   }
+
+  .todo-item:hover {
+    background-color: #1a9eff;
+  }
+
+  .delete-btn {
+    background-color: rgb(228, 46, 46, 0.75);
+    border: 0;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  }
+
+ .delete-btn:hover {
+  background-color: rgb(228, 46, 46);
+ }
+
+ .add-to-list {
+  background-color: rgb(55, 211, 79);
+  border: 0;
+  font-weight: bold;
+ }
+
+ .clear-list {
+  background-color: rgb(228, 46, 46, 0.75);
+  border: 0;
+  font-weight: bold;
+ }
+
+ .fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+ }
+
+ .todo-item:nth-child(2n) {
+  background-color: rgba(128, 128, 128, 0.192);
+ }
+
+ .todo-item:nth-child(2n):hover {
+  background-color: #80c9ff;
+ }

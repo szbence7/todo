@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
     <title>ToDo List</title>
 </head>
 <body>
-  <h1>ToDo List</h1>
-  <form onsubmit="event.preventDefault()">
-    <input type="text" id="todoInput" placeholder="Add a todo item">
-    <button onclick="addTodo()">Add to list</button>
+  <main>
+    <h1>ToDo List</h1>
+    <form onsubmit="event.preventDefault()">
+      <input type="text" id="todoInput" placeholder="Add a todo item">
+      <button onclick="addTodo()" class="add-to-list">Add to List</button>
+      <button onclick="clearList()" class="clear-list">Clear List</button>
     </form>
-    <ul id="todoList" class="todoList">
+    <ul id="todoList" class="todo-list">
     </ul>
-<script src="script.js"></script>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
