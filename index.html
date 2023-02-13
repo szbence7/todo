@@ -9,13 +9,12 @@
 </head>
 <body>
   <h1>ToDo List</h1>
-  <form onsubmit="addTodo()"; return false;>
+  <form onsubmit="event.preventDefault()">
     <input type="text" id="todoInput" placeholder="Add a todo item">
-    <button type="submit">Add to list</button>
+    <button onclick="addTodo()">Add to list</button>
     </form>
     <ul id="todoList" class="todoList">
     </ul>
-    <span onclick="addTodo()">Add</span>
 <script src="script.js"></script>
 </body>
 </html>
