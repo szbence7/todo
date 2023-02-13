@@ -8,7 +8,6 @@ function addTodo() {
       return;
     }
     else {
-
     const todoItem = document.createElement("li");
     const deleteBtn = document.createElement("button");
     const todoText = document.createTextNode(todoValue);
@@ -23,7 +22,6 @@ function addTodo() {
     })
 
     todoItem.innerHTML = todoValue.charAt(0).toUpperCase() + todoValue.slice(1);
-    todoItem.appendChild(todoText);
     todoItem.appendChild(deleteBtn);
     todoList.appendChild(todoItem);
     todoInput.value = "";
