@@ -30,6 +30,7 @@ main {
     padding: 10px;
     width: 80%;
     font-weight: 500;
+    flex: 1;
   }
   .todo-item {
     background-color: rgba(128, 128, 128, 0.318);
