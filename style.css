@@ -16,7 +16,6 @@ body {
 main {
   margin: auto;
   width: 70%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -87,4 +86,33 @@ main {
 
  .todo-item:nth-child(2n):hover {
   background-color: #80c9ff;
+ }
+
+ .footer {
+  text-align: right;
+  width: 100%;
+  font-size: 0.1rem;
+ }
+
+ div > a {
+  text-decoration: none;
+  color: #000000b5;
+ }
+
+ @media only screen and (max-width: 480px) {
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form > button {
+    padding: 10px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  input {
+    border: 0 0 1 0 solid;
+    margin-bottom: 20px;
+  }
  }

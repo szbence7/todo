@@ -14,12 +14,13 @@
   <main>
     <h1>ToDo List</h1>
     <form onsubmit="event.preventDefault()">
-      <input type="text" id="todoInput" placeholder="Add a todo item">
+      <input maxlength="18" type="text" id="todoInput" placeholder="Add a todo item">
       <button onclick="addTodo()" class="add-to-list">Add to List</button>
       <button onclick="clearList()" class="clear-list">Clear List</button>
     </form>
     <ul id="todoList" class="todo-list">
     </ul>
+    <div class="footer"><a href="http://github.com/szbence7">by Bence</a></div>
   </main>
   <script src="script.js"></script>
 </body>
