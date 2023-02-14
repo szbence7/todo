@@ -11,6 +11,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   margin: 0 auto;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 main {
